@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZA WARUDO! | Zawardo</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bungee&family=IM+Fell+English:wght@400;700&display=swap');
+        
+        body {
+            background: linear-gradient(135deg, #1a0033, #330066, #000);
+            color: #ffd700;
+            font-family: 'IM Fell English', serif;
+            padding: 2rem;
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        .title {
+            font-family: 'Bungee', cursive;
+            font-size: 4rem;
+            color: #ffd700;
+            text-shadow: 4px 4px 0 #ff4444, 8px 8px 0 #000;
+            margin-bottom: 1.5rem;
+            letter-spacing: 0.1em;
+        }
+        
+        .approach {
+            font-size: 2rem;
+            margin: 2rem 0;
+            color: #00ffff;
+            text-shadow: 2px 2px 0 #000;
+            font-style: italic;
+        }
+        
+        .name {
+            color: #ffff00;
+            text-shadow: 0 0 10px #ffff00;
+            font-weight: bold;
+        }
+        
+        .muda {
+            font-size: 5rem;
+            color: #ff4444;
+            text-shadow: 3px 3px 0 #000, 0 0 20px #ff4444;
+            font-weight: 900;
+            letter-spacing: 0.2em;
+            margin: 2rem 0;
+        }
+        
+        .stand-name {
+            font-size: 3rem;
+            background: linear-gradient(90deg, #ff00ff, #00ffff, #ffff00);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 0.3em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">ZA WARUDO!</h1>
+        
+        <div class="approach">
+            Oh? You're approaching me? <span class="name">{{ name }}</span>
+        </div>
+        
+        <div class="muda">MUDA MUDA MUDA MUDA!</div>
+        
+        <h2 class="stand-name">The World</h2>
+    </div>
+</body>
+</html>
