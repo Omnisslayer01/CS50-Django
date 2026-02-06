@@ -1,0 +1,27 @@
+{% extends "html/layout.html" %}
+{% block body %}
+    <h1>My To-Do-List</h1>
+    <ol type="A">
+
+        {% for task in tasks %}
+        <li>{{task}}</li><input type="checkbox">
+
+        {% empty %}
+        <li><h4>This List is Empty</h4></li>
+        {% endfor %}
+
+    </ol>
+    
+
+    <a href="{% url 'tasks:addtasks' %}">Add Tasks</a>
+
+<style>
+    li {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+        text-align: center;
+    }
+
+</style>
+
+{% endblock %}

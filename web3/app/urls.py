@@ -6,5 +6,4 @@ urlpatterns=[
     path("diyan",views.hi,name="hi"),
     path("DIO/<str:name>",views.Zawardo,name="DIO"),
     #path("<str:name>",views.greet,name="Saying Hello"),
-    
 ]
