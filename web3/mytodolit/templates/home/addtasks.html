@@ -1,0 +1,14 @@
+{% extends 'home/layout.html' %}
+{% block body%}
+    <h1>Want to add Tasks to Your To-Do-List</h1>
+    <h4>Now you can do it below</h4>
+    
+    <form action="{% url 'thisisaddtask' %}" method="post">
+        {% csrf_token %}
+        {{myform}}
+        <input type="submit">
+    </form>
+    
+    
+
+{% endblock %}

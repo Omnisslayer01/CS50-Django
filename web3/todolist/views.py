@@ -5,8 +5,6 @@ from django.urls import reverse
 #from django.shortcuts import redirect
 
 
-
-
 class myform(forms.Form):
     tasks=forms.CharField(max_length=100, label="New Tasks")
     Priority=forms.IntegerField(min_value=0,max_value=10)
